@@ -21,6 +21,9 @@ source venv/bin/activate
 createuser demo_user --createdb --createrole --pwprompt
 createdb demo_database --owner=demo_user --username=demo_user 
 ```
+Note: There should be the prompt asking for password. The password for this database is `default_password`.
+
+
 4. Initialize the app:
 ```
 export FLASK_APP=launcher.py
