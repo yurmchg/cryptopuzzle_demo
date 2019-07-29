@@ -19,7 +19,7 @@ source venv/bin/activate
 3. Setup a database:
 ```
 createuser demo_user --createdb --createrole --pwprompt
-createdb demo_database --tablespace="fractals" --tablespace="demo_fractals" --owner=demo_user --username=demo_user 
+createdb demo_database --owner=demo_user --username=demo_user 
 ```
 4. Initialize the app:
 ```
@@ -35,5 +35,6 @@ flask run
 ```
 
 The API is available on the localhost:
-* http://127.0.0.1:5000/api/v1.0/cryptopuzzle
-* http://127.0.0.1:5000/api/v1.0/demo_resource
+* http://127.0.0.1:5000/api/v1.0/cryptopuzzle - hexagons on the map
+* http://127.0.0.1:5000/api/v1.0/demo_resource - fractals dividing the planet by 32 parts
+* http://127.0.0.1:5000/api/v1.0/cryptopuzzle - update the database with 100 new hexagons
